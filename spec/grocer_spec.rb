@@ -308,12 +308,4 @@ describe "Grocer" do
       end
     end
 
-    describe "discount of ten percent" do
-      it "applies 10% discount if cart over $100" do
-        beer = find_item('BEER')
-        cart = Array.new(10, beer)
-        expect(checkout(cart, [])).to eq(117.00)
-      end
-    end
-  end
-end
+    
